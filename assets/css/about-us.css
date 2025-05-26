@@ -1,0 +1,354 @@
+/* About Us Page Custom Styles */
+
+/* Welcome Message Section */
+.welcome-message {
+  padding: 80px 0px;
+  background-color: #f8f9fa;
+}
+
+.welcome-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.welcome-content p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #666;
+  margin: 0;
+}
+
+/* Academic Year Section */
+.academic-year {
+  padding: 80px 0px;
+  background: linear-gradient(145deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.academic-year .section-heading h6,
+.academic-year .section-heading h4,
+.academic-year .section-heading p {
+  color: white;
+}
+
+.term-item {
+  background: rgba(255,255,255,0.1);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.term-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.15);
+}
+
+.term-number {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #ff6b6b, #ee5a24);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.term-number span {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.term-item h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.term-item p {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.term-item .note {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.term-item .note small {
+  color: rgba(255,255,255,0.8);
+  font-size: 12px;
+}
+
+/* Arabic Program Section */
+.arabic-program {
+  padding: 80px 0px;
+  background-color: white;
+}
+
+.program-content {
+  margin-top: 40px;
+}
+
+.program-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.program-item:hover {
+  background: #e9ecef;
+  transform: translateX(10px);
+}
+
+.program-item .icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.program-item .icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.program-item .content h5 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.program-item .content p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* Additional Services Section */
+.additional-services {
+  padding: 80px 0px;
+  background: linear-gradient(145deg, #f093fb 0%, #f5576c 100%);
+}
+
+.additional-services .section-heading h6,
+.additional-services .section-heading h4 {
+  color: white;
+}
+
+.additional-services .service-item {
+  background: rgba(255,255,255,0.95);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.additional-services .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+
+.additional-services .service-item .icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.additional-services .service-item .icon i {
+  font-size: 32px;
+  color: white;
+}
+
+.additional-services .service-item h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.additional-services .service-item p {
+  color: #666;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  padding: 80px 0px;
+  background-color: #f8f9fa;
+}
+
+.contact-item {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-item .icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.contact-item .icon i {
+  font-size: 32px;
+  color: white;
+}
+
+.contact-item h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.contact-item p {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* Footer Section */
+.footer-section {
+  padding: 60px 0px 40px;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  color: white;
+}
+
+.footer-content {
+  margin-bottom: 30px;
+}
+
+.footer-content p {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 10px;
+}
+
+.footer-content p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .program-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .program-item .icon {
+    margin: 0 auto 15px;
+  }
+  
+  .term-item,
+  .additional-services .service-item,
+  .contact-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-message,
+  .academic-year,
+  .arabic-program,
+  .additional-services,
+  .contact-info-section {
+    padding: 60px 0px;
+  }
+  
+  .welcome-content {
+    padding: 30px 20px;
+  }
+  
+  .term-item,
+  .additional-services .service-item,
+  .contact-item {
+    padding: 30px 20px;
+  }
+  
+  .program-item {
+    padding: 15px;
+  }
+} 
