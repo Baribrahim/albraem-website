@@ -1,0 +1,312 @@
+/* Calendar Page Specific Styles */
+
+/* Calendar Section */
+.calendar-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Term Cards */
+.term-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.term-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Term Headers */
+.term-header {
+  padding: 25px 30px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.autumn-term .term-header {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+}
+
+.spring-term .term-header {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.summer-term .term-header {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  color: #333;
+}
+
+.term-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Term Content */
+.term-content {
+  padding: 30px;
+}
+
+/* Date Items */
+.date-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.date-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.date-item .date {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #333;
+  min-width: 80px;
+}
+
+.date-item .event {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+  flex: 1;
+}
+
+/* Special Date Items */
+.date-item.half-term {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-left: 4px solid #4c63d2;
+}
+
+.date-item.half-term .date,
+.date-item.half-term .event {
+  color: white;
+  font-weight: 600;
+}
+
+.date-item.holiday {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-left: 4px solid #e91e63;
+}
+
+.date-item.holiday .date,
+.date-item.holiday .event {
+  color: white;
+  font-weight: 600;
+}
+
+.date-item.special {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-left: 4px solid #ff6b35;
+  color: #333;
+}
+
+.date-item.special .date,
+.date-item.special .event {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Term Notes */
+.term-note {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.term-note p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Important Notice Section */
+.important-notice {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.notice-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.notice-icon {
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.notice-icon i {
+  font-size: 3rem;
+  color: #ff6b35;
+}
+
+.notice-content h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.notice-content p {
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.notice-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .term-card {
+    margin-bottom: 40px;
+  }
+  
+  .notice-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .notice-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-section {
+    padding: 60px 0;
+  }
+  
+  .term-content {
+    padding: 20px;
+  }
+  
+  .date-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .date-item .date {
+    margin-bottom: 5px;
+    min-width: auto;
+  }
+  
+  .date-item .event {
+    text-align: center;
+  }
+  
+  .term-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .notice-box {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .term-header {
+    padding: 20px 15px;
+  }
+  
+  .term-content {
+    padding: 15px;
+  }
+  
+  .date-item {
+    padding: 12px;
+    margin-bottom: 6px;
+  }
+  
+  .date-item .date,
+  .date-item .event {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation for page load */
+.term-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.term-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.term-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.term-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced hover effects */
+.autumn-term:hover {
+  border-color: #ff6b35;
+}
+
+.spring-term:hover {
+  border-color: #4ecdc4;
+}
+
+.summer-term:hover {
+  border-color: #fcb69f;
+}
+
+/* Scrollbar styling for better UX */
+.term-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.term-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.term-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.term-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 
