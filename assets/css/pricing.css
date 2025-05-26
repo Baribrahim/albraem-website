@@ -1,0 +1,122 @@
+/* Pricing Page Styles */
+
+.pricing-card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b35;
+}
+
+.pricing-card.featured {
+  border-color: #ff6b35;
+  background: linear-gradient(145deg, #fff5f2, #ffffff);
+}
+
+.price-tag {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 10px;
+}
+
+.currency {
+  font-size: 1.2rem;
+  vertical-align: top;
+}
+
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Amiri', serif;
+  line-height: 1.8;
+}
+
+.class-info {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff6b35;
+}
+
+.bank-details {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  color: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+  margin: 50px 0;
+}
+
+/* Fix spacing for registration announcement section */
+.services {
+  padding-top: 20px !important;
+  padding-bottom: 20px;
+}
+
+/* Responsive adjustments for pricing cards */
+@media (max-width: 768px) {
+  .pricing-card {
+    margin-bottom: 20px;
+  }
+  
+  .price-tag {
+    font-size: 2rem;
+  }
+  
+  .class-info {
+    padding: 15px;
+  }
+  
+  .bank-details {
+    padding: 20px;
+  }
+  
+  .highlight-box {
+    padding: 20px;
+    margin: 0 0 15px 0;
+  }
+  
+  .services {
+    padding-top: 15px !important;
+    padding-bottom: 15px;
+  }
+}
+
+/* Additional styling for better mobile experience */
+@media (max-width: 576px) {
+  .arabic-text {
+    font-size: 0.9rem;
+  }
+  
+  .section-divider {
+    margin: 30px 0;
+  }
+  
+  .services {
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+  }
+} 
