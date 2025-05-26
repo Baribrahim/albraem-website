@@ -292,6 +292,29 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.header-area .main-nav .logo img {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.header-area .main-nav .logo .logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.background-header .main-nav .logo .logo-text {
+  color: #fff;
+}
+
 .background-header .main-nav .logo {
   line-height: 75px;
 }
@@ -560,6 +583,13 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
+    color: #1e1e1e;
+  }
+  .header-area .main-nav .logo img {
+    max-height: 45px;
+  }
+  .header-area .main-nav .logo .logo-text {
+    font-size: 18px;
     color: #1e1e1e;
   }
   .header-area.header-sticky .nav li a:hover,
