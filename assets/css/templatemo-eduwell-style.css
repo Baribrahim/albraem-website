@@ -503,7 +503,7 @@ header
   width: 32px;
   height: 40px;
   text-indent: -9999em;
-  z-index: 99;
+  z-index: 150;
   right: 40px;
   display: none;
 }
@@ -650,6 +650,8 @@ header
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
     color: #1e1e1e;
+    z-index: 10;
+    position: relative;
   }
   .header-area .main-nav .logo img {
     max-height: 45px;
@@ -657,6 +659,8 @@ header
   .header-area .main-nav .logo .logo-text {
     font-size: 18px;
     color: #1e1e1e;
+    z-index: 10;
+    position: relative;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
