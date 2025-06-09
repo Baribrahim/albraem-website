@@ -78,7 +78,43 @@ https://templatemo.com/tm-573-eduwell
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="right-image">
+          <!-- 
+            SLIDESHOW INSTRUCTIONS: 
+            To add a new photo to the slideshow:
+            1. Add the image file to assets/images/ folder
+            2. Copy one of the slide div structures below and update:
+               - src="assets/images/YOUR_NEW_IMAGE.jpg" 
+               - alt="Your Image Description"
+               - slide-caption text
+            3. Add a new dot: <span class="dot" onclick="currentSlide(X)"></span>
+               (where X is the slide number: 4, 5, 6, etc.)
+            
+            The slideshow will automatically include the new slides!
+          -->
+          <div class="slideshow-container">
+            <div class="slide active">
+              <img src="assets/images/group_photo.jpeg" alt="Group Photo" class="slide-image">
+              <div class="slide-caption">Our Learning Community</div>
+            </div>
+            <div class="slide">
+              <img src="assets/images/eid.jpeg" alt="Eid Celebration" class="slide-image">
+              <div class="slide-caption">Eid Celebrations</div>
+            </div>
+            <div class="slide">
+              <img src="assets/images/teachers.jpg" alt="Our Teachers" class="slide-image">
+              <div class="slide-caption">Our Dedicated Teachers</div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="slide-prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="slide-next" onclick="changeSlide(1)">&#10095;</a>
+            
+            <!-- Dots for slide indicators -->
+            <div class="slide-dots">
+              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -86,22 +122,73 @@ https://templatemo.com/tm-573-eduwell
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
-  <section class="services" id="services">
+  <section class="services" id="services" style="margin-top: 50px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
             <h6>Our Mission</h6>
-            <h4>What We <em>Believe In - الرسالة</em></h4>
+            <h4>Our <em>Mission - الرسالة</em></h4>
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-3">
-          <div class="service-item text-center">
-            <div class="icon">
-              <img src="" alt="">
+        <div class="col-lg-10 offset-lg-1">
+          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 50px 40px; color: white; position: relative; overflow: hidden; box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);">
+            <!-- Decorative elements -->
+            <div style="position: absolute; top: -30px; right: -30px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; opacity: 0.6;"></div>
+            <div style="position: absolute; bottom: -40px; left: -40px; width: 120px; height: 120px; background: rgba(255,255,255,0.1); border-radius: 50%; opacity: 0.4;"></div>
+            
+            <div style="position: relative; z-index: 2;">    
+              <!-- Mission Statement -->
+              <div>
+                <p style="text-align: right; direction: rtl; font-size: 24px; line-height: 2; color: white; margin-top: 20px; padding: 10px;">
+                  مدرسة البراعم تُقدم بيئةً تعليميةً آمنةً ومُحفزة، تدمج بين:
+                </p>
+              </div>
+              
+              <!-- Mission Points Grid -->
+              <div class="row">
+                <div class="col-lg-6" style="margin-bottom: 20px;">
+                  <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 25px; text-align: right; direction: rtl; backdrop-filter: blur(10px); height: 100%; border: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
+                      <div style="margin-left: 15px;">
+                        <div style="width: 8px; height: 8px; background: #fff; border-radius: 50%; margin-top: 8px;"></div>
+                      </div>
+                      <p style="margin: 0; font-size: 16px; text-align: right; direction: rtl; line-height: 1.6; color: white;">تعليم اللغة العربية والقرآن الكريم بِطرقٍ مُبتكرةٍ تناسب مرحلة الطفولة</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px;">
+                  <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 25px; text-align: right; direction: rtl; backdrop-filter: blur(10px); height: 100%; border: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
+                      <div style="margin-left: 15px;">
+                        <div style="width: 8px; height: 8px; background: #fff; border-radius: 50%; margin-top: 8px;"></div>
+                      </div>
+                      <p style="margin: 0; font-size: 16px; text-align: right; direction: rtl; line-height: 1.6; color: white;">غرس القيم الإسلامية والأخلاق النبوية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px;">
+                  <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 25px; text-align: right; direction: rtl; backdrop-filter: blur(10px); height: 100%; border: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
+                      <div style="margin-left: 15px;">
+                        <div style="width: 8px; height: 8px; background: #fff; border-radius: 50%; margin-top: 8px;"></div>
+                      </div>
+                      <p style="margin: 0; font-size: 16px; text-align: right; direction: rtl; line-height: 1.6; color: white;">بناء شخصية الطفل المسلم ليكون فرداً صالحاً في مجتمعه</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px;">
+                  <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 25px; text-align: right; direction: rtl; backdrop-filter: blur(10px); height: 100%; border: 1px solid rgba(255,255,255,0.2);">
+                    <div style="display: flex; align-items: flex-start; justify-content: flex-end;">
+                      <div style="margin-left: 15px;">
+                        <div style="width: 8px; height: 8px; background: #fff; border-radius: 50%; margin-top: 8px;"></div>
+                      </div>
+                      <p style="margin: 0; font-size: 16px; text-align: right; direction: rtl; line-height: 1.6; color: white;">تعزيز الشراكة مع الأسر لتحقيق التكامل بين البيت والمدرسة</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h4>Title - To be Added</h4>
-            <p>Our mission is to provide high-quality Arabic language education that connects students with the beautiful language of the Quran...</p>
           </div>
         </div>
       </div>
@@ -109,44 +196,98 @@ https://templatemo.com/tm-573-eduwell
   </section>
   <!-- ***** Mission Section End ***** -->
 
+  <!-- ***** Vision Section Start ***** -->
+  <section class="our-courses" id="vision" style="background: #f8f9fa; padding: 40px 0; margin-top: 100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Our Vision</h6>
+            <h4>Our <em>Vision - الرؤية</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="service-item text-center" style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+            <div class="icon">
+              <i class="fa fa-eye" style="font-size: 48px; color: #ff589e;"></i>
+            </div>
+            <p style="text-align: right; direction: rtl; font-size: 18px; line-height: 2; color: #444; margin-top: 20px;">
+              أن تكون مدرسة البراعم رائدةً في تعليم القرآن الكريم واللغة العربية للأطفال، وتربيتهم على القيم الإسلامية، لِتُنشئ جيلاً مُتمسّكاً بهويته، منطلقاً من تعاليم دينه، قادراً على التفاعل الإيجابي مع المجتمع.
+            </p>
+            <p style="text-align: right; direction: rtl; font-size: 18px; line-height: 2; color: #444; margin-top: 20px;">
+              To be a pioneer in teaching the Holy Quran and the Arabic language to children, and instilling Islamic values ​​in them, creating a generation that is committed to its identity, guided by the teachings of its religion, and capable of interacting positively with society.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Vision Section End ***** -->
+
   <!-- ***** Goals Section Start ***** -->
-  <section class="our-courses" id="goals">
+  <section class="our-courses" id="goals" style="margin-top: 50px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
             <h6>Our Goals</h6>
             <h4>What We <em>Aim to Achieve - الاهداف</em></h4>
-            <p>We are committed to excellence in Arabic language education and promoting a love for learning</p>
           </div>
         </div>
         <div class="col-lg-12">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="" alt="">
+            <div class="col-lg-4" style="margin-bottom: 30px;">
+              <div style="background: white; border-radius: 15px; padding: 30px; height: 100%; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #f0f0f0; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div style="text-align: center; margin-bottom: 25px;">
+                  <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4ecdc4, #44a08d); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <span style="color: white; font-size: 24px; font-weight: bold;">٣</span>
+                  </div>
                 </div>
-                <h4>Language Mastery</h4>
-                <p>Help students achieve fluency in Arabic through comprehensive and engaging curriculum designed for all skill levels.</p>
+                <h4 style="text-align: right; direction: rtl; color: #333; margin-bottom: 20px; font-weight: 600;">التفاعل في بيئة إسلامية</h4>
+                <p style="text-align: right; direction: rtl; line-height: 1.8; color: #666; margin-bottom: 20px;">
+                  التفاعل في بيئة إسلامية محفزة ومناسبة، تساعد على نمو الطفل روحياً واجتماعياً في جو من الأخوة والمحبة.
+                </p>
+                <div style="border-top: 1px solid #eee; padding-top: 15px;">
+                  <p style="font-size: 13px; color: #999; margin: 0; text-align: center;">
+                    <strong>Goal:</strong> Interactive Islamic Environment
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="" alt="">
+            <div class="col-lg-4" style="margin-bottom: 30px;">
+              <div style="background: white; border-radius: 15px; padding: 30px; height: 100%; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #f0f0f0; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div style="text-align: center; margin-bottom: 25px;">
+                  <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b6b, #ee5a6f); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <span style="color: white; font-size: 24px; font-weight: bold;">٢</span>
+                  </div>
                 </div>
-                <h4>Cultural Understanding</h4>
-                <p>Foster deep appreciation and understanding of Arabic culture and Islamic heritage through immersive learning experiences.</p>
+                <h4 style="text-align: right; direction: rtl; color: #333; margin-bottom: 20px; font-weight: 600;">التربية الإسلامية</h4>
+                <p style="text-align: right; direction: rtl; line-height: 1.8; color: #666; margin-bottom: 20px;">
+                  تربية الأطفال على القيم والأخلاق الإسلامية النبيلة، وغرس حب الله ورسوله في قلوبهم منذ الصغر.
+                </p>
+                <div style="border-top: 1px solid #eee; padding-top: 15px;">
+                  <p style="font-size: 13px; color: #999; margin: 0; text-align: center;">
+                    <strong>Goal:</strong> Islamic Education and Values
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="" alt="">
+            <div class="col-lg-4" style="margin-bottom: 30px;">
+              <div style="background: white; border-radius: 15px; padding: 30px; height: 100%; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 1px solid #f0f0f0; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <div style="text-align: center; margin-bottom: 25px;">
+                  <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <span style="color: white; font-size: 24px; font-weight: bold;">١</span>
+                  </div>
                 </div>
-                <h4>Community Building</h4>
-                <p>Create a supportive community of learners who inspire and motivate each other in their Arabic language journey.</p>
+                <h4 style="text-align: right; direction: rtl; color: #333; margin-bottom: 20px; font-weight: 600;">قراءة القرآن وفهمه</h4>
+                <p style="text-align: right; direction: rtl; line-height: 1.8; color: #666; margin-bottom: 20px;">
+                  القدرة على قراءة القرآن الكريم وفهم بعضه، وتعلم تلاوته بالطريقة الصحيحة مع التدبر في معانيه العظيمة.
+                </p>
+                <div style="border-top: 1px solid #eee; padding-top: 15px;">
+                  <p style="font-size: 13px; color: #999; margin: 0; text-align: center;">
+                    <strong>Goal:</strong> Ability to read and understand the Quran
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -241,7 +382,7 @@ https://templatemo.com/tm-573-eduwell
         </div>
         <!-- Address and Opening Hours -->
         <div class="col-lg-6">
-          <div class="address-info" style="margin-bottom: 25px;">
+          <div class="address-info" style="margin-bottom: 25px; padding: 20px;">
             <h5 style="color: #333; margin-bottom: 15px; font-weight: 600;">
               <i class="fa fa-map-marker" style="margin-right: 8px;"></i>Address
             </h5>
@@ -252,7 +393,7 @@ https://templatemo.com/tm-573-eduwell
             </p>
           </div>
           
-          <div class="opening-hours">
+          <div class="opening-hours" style="margin-bottom: 25px; padding: 20px;">
             <h5 style="color: #333; margin-bottom: 15px; font-weight: 600;">
               <i class="fa fa-clock-o" style="margin-right: 8px;"></i>Opening Hours
             </h5>
@@ -335,6 +476,54 @@ https://templatemo.com/tm-573-eduwell
 
         $(window).scroll(function () {
           checkSection();
+        });
+
+        // Slideshow functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        // Function to show a specific slide
+        function showSlide(index) {
+          // Hide all slides
+          slides.forEach(slide => slide.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+          
+          // Show the selected slide
+          slides[index].classList.add('active');
+          dots[index].classList.add('active');
+        }
+
+        // Function to go to next/previous slide
+        function changeSlide(direction) {
+          currentSlideIndex += direction;
+          
+          if (currentSlideIndex >= totalSlides) {
+            currentSlideIndex = 0;
+          } else if (currentSlideIndex < 0) {
+            currentSlideIndex = totalSlides - 1;
+          }
+          
+          showSlide(currentSlideIndex);
+        }
+
+        // Function to go to a specific slide (for dots)
+        function currentSlide(index) {
+          currentSlideIndex = index - 1;
+          showSlide(currentSlideIndex);
+        }
+
+        // Auto-advance slideshow every 5 seconds
+        setInterval(function() {
+          changeSlide(1);
+        }, 5000);
+
+        // Initialize slideshow on page load
+        document.addEventListener('DOMContentLoaded', function() {
+          if (slides.length > 0) {
+            showSlide(0);
+          }
         });
     </script>
 </body>
